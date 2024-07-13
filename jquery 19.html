@@ -1,0 +1,21 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("p").append("<b> welcome </b>")
+            // $("p").remove()
+        })
+        $("#btn2").click(function(){
+            $("ol").append("<li>welcome</li>")
+        })
+    })
+</script>
+<p> this is a paragaraph</p>
+<ol>
+    <li>
+        one
+    </li>
+    <li>two</li>
+</ol>
+<button id="btn1">appendtext</button>
+<button id="btn2">apendlist</button>

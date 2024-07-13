@@ -1,0 +1,29 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#flip").click(function(){
+            $("panel").slideToggle("slow")
+            $("panel").slideDown("slow")
+            $("panel").slideup()
+        })
+
+    })
+</script>
+<style>
+    #panel,#flip{
+        padding: 5px;
+        text-align: center;
+        background-color: aqua;
+        border:solid 1px;
+
+    }
+    #panel{
+        padding:10px;
+        display:none;
+    }
+</style>
+<body>
+    
+    <div id="flip"> click to slideshow</div>
+    <div id="panel"> hello world</div>
+</body>

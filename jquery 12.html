@@ -1,0 +1,17 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("p").hide(3000);
+        })
+        $("#show").click(function(){
+            $("p").show(2000)
+
+        })
+    })
+</script>
+<button id="hide">
+    hide paragraph
+</button>
+<button id="show"> show paragrah </button>
+<p>this is a paragraph</p>
